@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".PinActivity">
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="34dp">
+
+        <!-- Back arrow -->
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:padding="4dp"
+            android:layout_gravity="start"
+            android:src="@drawable/back_arrow"
+            android:contentDescription="Back" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter PIN"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enter your 4 digit pin"
+            android:textSize="16sp"
+            android:textColor="#888888"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center" />
+
+        <!-- PIN Dots -->
+        <LinearLayout
+            android:id="@+id/pinDots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <View android:id="@+id/dot1" style="@style/PinDot" />
+            <View android:id="@+id/dot2" style="@style/PinDot" />
+            <View android:id="@+id/dot3" style="@style/PinDot" />
+            <View android:id="@+id/dot4" style="@style/PinDot" />
+        </LinearLayout>
+
+        <!-- Keypad -->
+        <GridLayout
+            android:id="@+id/keypad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:columnCount="3"
+            android:rowCount="4"
+            android:alignmentMode="alignMargins"
+            android:useDefaultMargins="true"
+            android:layout_gravity="center">
+
+            <Button style="@style/KeypadButton" android:text="1" />
+            <Button style="@style/KeypadButton" android:text="2" />
+            <Button style="@style/KeypadButton" android:text="3" />
+            <Button style="@style/KeypadButton" android:text="4" />
+            <Button style="@style/KeypadButton" android:text="5" />
+            <Button style="@style/KeypadButton" android:text="6" />
+            <Button style="@style/KeypadButton" android:text="7" />
+            <Button style="@style/KeypadButton" android:text="8" />
+            <Button style="@style/KeypadButton" android:text="9" />
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:src="@drawable/blue_ic_tick"
+                android:contentDescription="Tick"
+                android:layout_gravity="center"/>
+            <Button style="@style/KeypadButton" android:text="0" />
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:src="@drawable/backspace"
+                android:layout_gravity="center"
+                android:contentDescription="Delete" />
+        </GridLayout>
+
+        <!-- Divider -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#CCCCCC" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:text="Or continue with"
+                android:textColor="#888888"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#CCCCCC" />
+        </LinearLayout>
+
+        <!-- Fingerprint card -->
+        <LinearLayout
+            android:id="@+id/fingerprintOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/outline"
+            android:layout_marginTop="24dp"
+            android:padding="16dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/fingerprint"
+                android:background="@drawable/transparent_circle"
+                android:padding="8dp"
+                android:contentDescription="Fingerprint" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Use fingerprint"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quick and secure access"
+                    android:textColor="#888888"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:padding="4dp"
+                android:src="@drawable/next_arrow"
+                android:contentDescription="Next" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Bottom Security Text -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/logo_security"
+            android:contentDescription="Shield" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:text="Your security is our priority"
+            android:textColor="#9B9B9B"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

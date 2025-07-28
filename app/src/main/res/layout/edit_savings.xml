@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="30dp">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="16dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Edit savings plan"
+            android:textSize="18sp"
+            android:textColor="#1D1D1F"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/menu_black" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
+        android:background="#C3C3C3"/>
+
+    <!-- Input Fields -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What are you saving for?"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginBottom="6dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="14sp"
+        android:hint="  Edit your goal for saving"
+        android:drawableStart="@drawable/target"
+        android:background="@drawable/outline"
+        android:textColorHint="#A4A2A2"
+        android:padding="10dp"
+        android:layout_marginBottom="14dp"
+        android:elevation="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Target amount"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginBottom="6dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="14sp"
+        android:hint="  Edit target amount"
+        android:drawableStart="@drawable/target"
+        android:background="@drawable/outline"
+        android:textColorHint="#A4A2A2"
+        android:padding="10dp"
+        android:layout_marginBottom="14dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monthly Income"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginBottom="6dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="14sp"
+        android:hint="  Edit salary"
+        android:drawableStart="@drawable/salary"
+        android:background="@drawable/outline"
+        android:textColorHint="#A4A2A2"
+        android:padding="10dp"
+        android:layout_marginBottom="14dp"
+        android:elevation="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duration"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginBottom="6dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="14sp"
+        android:hint="  Change goal duration"
+        android:drawableStart="@drawable/calendar"
+        android:background="@drawable/outline"
+        android:textColorHint="#A4A2A2"
+        android:padding="10dp"
+        android:layout_marginBottom="18dp"
+        android:elevation="4dp"/>
+
+    <!-- Suggestion -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/note"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Setting realistic goals based on your income helps achieve your savings target faster."
+            android:textColor="#7A7A7A"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <!-- Buttons -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/rounded_button"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="Update plan"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="+ Add a new plan"
+        android:textColor="#1E6CF9"
+        android:textAllCaps="false"
+        android:background="@drawable/outline"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Delete plan 🗑️"
+        android:textColor="#B10000"
+        android:backgroundTint="#FFD4D4"
+        android:textStyle="bold"
+        android:elevation="4dp"/>
+
+</LinearLayout>

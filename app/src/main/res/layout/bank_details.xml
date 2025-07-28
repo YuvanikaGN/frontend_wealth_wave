@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@android:color/white"
+    tools:context=".BankDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="20dp"
+                android:layout_height="16dp"
+                android:src="@drawable/back_arrow" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bank Details"
+                android:textSize="22sp"
+                android:textColor="#1D1D1F"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+
+    <!-- Subheading -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Please enter your bank account details below"
+        android:textSize="14sp"
+        android:textColor="#6E7485"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <!-- Bank Name -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bank Name "
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="#FF0000"/>
+    </LinearLayout>
+
+
+
+
+    <EditText
+        android:layout_width="370dp"
+        android:layout_height="55dp"
+        android:hint="Select your bank"
+        android:layout_gravity="center"
+        android:background="@drawable/outline"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginBottom="18dp"
+        android:textColorHint="#CCCCCC"
+        android:elevation="4dp"/>
+
+    <!-- Name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Bank Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name "
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="#FF0000"/>
+    </LinearLayout>
+
+        <EditText
+            android:layout_width="370dp"
+            android:layout_height="55dp"
+            android:hint="Enter full name as per bank records"
+            android:layout_gravity="center"
+            android:background="@drawable/outline"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_marginBottom="18dp"
+            android:textColorHint="#CCCCCC"
+            android:elevation="4dp"/>
+
+    <!-- Bank Account Number -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Bank Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank Account number "
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="#FF0000"/>
+    </LinearLayout>
+
+        <EditText
+            android:layout_width="370dp"
+            android:layout_height="55dp"
+            android:hint="Enter 10-12 digit account number"
+            android:layout_gravity="center"
+            android:background="@drawable/outline"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_marginBottom="18dp"
+            android:textColorHint="#CCCCCC"
+            android:elevation="4dp"/>
+
+    <!-- IFSC Code -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Bank Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IFSC Code "
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="#FF0000"/>
+    </LinearLayout>
+
+        <EditText
+            android:layout_width="370dp"
+            android:layout_height="55dp"
+            android:hint="Enter 11 digit IFSC Code"
+            android:layout_gravity="center"
+            android:background="@drawable/outline"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_marginBottom="18dp"
+            android:textColorHint="#CCCCCC"
+            android:elevation="4dp"/>
+
+    <!-- Mobile Number -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Bank Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile number "
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="#FF0000"/>
+    </LinearLayout>
+
+        <EditText
+            android:layout_width="370dp"
+            android:layout_height="55dp"
+            android:hint="Enter your mobile number"
+            android:layout_gravity="center"
+            android:background="@drawable/outline"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_marginBottom="18dp"
+            android:textColorHint="#CCCCCC"
+            android:elevation="4dp"/>
+
+    <!-- Continue Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:textAllCaps="false"
+        android:id="@+id/continueBtn"
+        android:background="@drawable/rounded_button"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Continue"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:backgroundTint="#1A73E8"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/grey_lock"
+            android:padding="4dp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your information is secure and encrypted"
+            android:textSize="12sp"
+            android:textColor="#7C7C7C"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+</LinearLayout>
+
+

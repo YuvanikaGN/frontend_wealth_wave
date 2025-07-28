@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:id="@+id/main"
+    tools:context=".ui.LoginPageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="30dp">
+
+        <!-- Back Arrow -->
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:padding="4dp"
+            android:src="@drawable/back_arrow"
+            android:layout_gravity="start"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_marginTop="-30dp"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo" />
+
+        <!-- Heading -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login to your account"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Email -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="  Enter your email"
+            android:background="@drawable/outline"
+            android:drawableStart="@drawable/mail"
+            android:textColor="#000000"
+            android:textColorHint="#A4A2A2"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="4dp"/>
+
+        <!-- Password -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="  Enter your password"
+            android:drawableStart="@drawable/grey_lock"
+            android:background="@drawable/outline"
+            android:textColor="#000000"
+            android:textColorHint="#A4A2A2"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:inputType="textPassword"
+            android:layout_marginBottom="8dp"
+            android:elevation="4dp"/>
+
+        <!-- Forget Password -->
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password?"
+            android:textSize="14sp"
+            android:textColor="#2479F1"
+            android:layout_gravity="end"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Login Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:background="@drawable/logo_lineargrad"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Or Continue With -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"
+                android:background="#999999" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Or continue with"
+                android:textColor="#555A64"
+                android:textSize="14sp"
+                android:paddingHorizontal="8dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"
+                android:background="#999999" />
+        </LinearLayout>
+
+        <!-- Google and Mobile Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="4dp"
+            android:layout_marginBottom="32dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="340dp"
+                android:layout_weight="1"
+                android:layout_height="55dp"
+                android:text="Google"
+                android:textColor="#636363"
+                android:background="@drawable/outline"
+                android:textAllCaps="false"
+                android:drawablePadding="8dp"
+                android:layout_marginEnd="8dp"
+                android:elevation="4dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/mobile"
+                android:layout_width="340dp"
+                android:layout_weight="1"
+                android:layout_height="55dp"
+                android:text="Mobile"
+                android:textColor="#636363"
+                android:background="@drawable/outline"
+                android:textAllCaps="false"
+                android:drawablePadding="8dp"
+                android:layout_marginStart="8dp"
+                android:elevation="4dp"/>
+        </LinearLayout>
+
+        <!-- Create Account -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don’t have an account? "
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/createAccBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create account"
+                android:textColor="#2479F1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

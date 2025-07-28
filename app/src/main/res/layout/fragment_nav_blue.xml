@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nav_blue">
+
+    <LinearLayout
+        android:id="@+id/bottomNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#2196F3"
+        android:weightSum="4"> <!-- No padding on sides -->
+
+        <!-- Home Icon -->
+        <ImageButton
+            android:id="@+id/homeBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_white_home"
+            android:background="#0B4CBA"
+            android:scaleType="centerInside"
+            android:contentDescription="Home" />
+
+        <!-- Rupee Icon -->
+        <ImageButton
+            android:id="@+id/savingsBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_white_wallet"
+            android:background="#0B4CBA"
+            android:scaleType="centerInside"
+            android:contentDescription="Rupee" />
+
+        <!-- Graph Icon -->
+        <ImageButton
+            android:id="@+id/investmentTrackingBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_white_progress"
+            android:background="#0B4CBA"
+            android:scaleType="centerInside"
+            android:contentDescription="Graph" />
+
+        <!-- Profile Icon -->
+        <ImageButton
+            android:id="@+id/userprofileBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_white_profile"
+            android:background="#0B4CBA"
+            android:scaleType="centerInside"
+            android:contentDescription="Profile" />
+    </LinearLayout>
+
+
+</RelativeLayout>

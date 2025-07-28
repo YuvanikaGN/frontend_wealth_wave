@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/wealth_wave"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Wealth_wave"
+        tools:targetApi="31">
+        <activity
+            android:name=".MobileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FingerprintActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SavingsSummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdjustIncomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdditionalIncomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GoalPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SupportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SecuritySettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExpenseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BankaccVerificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SigninEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GoogleSigninActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlanCreationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AccVerifiedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavHeaderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".AccCreatedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InvestmentTrackingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.LoginPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TransactionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IncomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditsavingsCopyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditSavingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SavingsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Wealth_wave" />
+        <activity
+            android:name=".HomeCopyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BankDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LogoPageActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Wealth_wave" />
+    </application>
+
+</manifest>

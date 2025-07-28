@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:id="@+id/main"
+    tools:context=".SavingsSummaryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:padding="4dp"
+            android:src="@drawable/back_arrow"
+            android:contentDescription="Back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Savings summary"
+            android:textSize="18sp"
+            android:textColor="#1D1D1F"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/menu_black"
+            android:contentDescription="Menu" />
+    </LinearLayout>
+
+    <!-- Save Track Title and Date -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Track"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="July 10, 2025"
+        android:textColor="#888888"
+        android:textSize="14sp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Total Savings -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Savings"
+        android:textColor="#888888"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹7,45,000"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Savings Breakdown -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Savings Breakdown"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Breakdown Details -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Monthly deposit"
+                android:textColor="#777777"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹3,400"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Account number"
+                android:textColor="#777777"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="****0612"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Account Type"
+                android:textColor="#777777"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Savings Account"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Bank Name"
+                android:textColor="#777777"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HDFC Bank"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <!-- Share Via -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share Via"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Share Buttons -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:rowOrderPreserved="false"
+        android:layout_marginBottom="24dp"
+        android:columnOrderPreserved="false">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:text="PDF Export"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/summary_pdf"
+            android:textAllCaps="false"
+            android:background="@drawable/outline"
+            android:padding="10dp"
+            android:layout_margin="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:text="Email"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/summary_email"
+            android:textAllCaps="false"
+            android:background="@drawable/outline"
+            android:padding="10dp"
+            android:layout_margin="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:text="Message"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/summary_msg"
+            android:textAllCaps="false"
+            android:background="@drawable/outline"
+            android:padding="10dp"
+            android:layout_margin="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:text="WhatsApp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/summary_whatsapp"
+            android:textAllCaps="false"
+            android:background="@drawable/outline"
+            android:padding="10dp"
+            android:layout_margin="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:text="Save to files"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/summary_files"
+            android:textAllCaps="false"
+            android:background="@drawable/outline"
+            android:padding="10dp"
+            android:layout_margin="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:text="more"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/summary_more"
+            android:textAllCaps="false"
+            android:background="@drawable/outline"
+            android:padding="10dp"
+            android:layout_margin="5dp"/>
+    </GridLayout>
+
+    <!-- Download PDF Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/downloadPdfButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_button"
+        android:text="Download PDF"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:textCursorDrawable="@drawable/download"
+        android:drawablePadding="8dp" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/fragment_nav_blue"/>
+
+</LinearLayout>

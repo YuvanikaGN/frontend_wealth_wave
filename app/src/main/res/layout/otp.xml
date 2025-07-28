@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".OtpActivity">
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomMessage"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:gravity="center_horizontal">
+
+            <!-- Back arrow -->
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:padding="4dp"
+                android:layout_gravity="start"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/back_arrow" />
+
+            <!-- Shield icon -->
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/verify"
+                android:padding="20dp" />
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verify your phone number"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="24dp"
+                android:gravity="center" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter the code that has been sent to your\nmobile number"
+                android:textSize="16sp"
+                android:textColor="#666666"
+                android:gravity="center"
+                android:layout_marginTop="12dp" />
+
+            <!-- OTP boxes -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <EditText
+                    android:id="@+id/otp1"
+                    style="@style/OtpBoxStyle" />
+
+                <EditText
+                    android:id="@+id/otp2"
+                    style="@style/OtpBoxStyle" />
+
+                <EditText
+                    android:id="@+id/otp3"
+                    style="@style/OtpBoxStyle" />
+
+                <EditText
+                    android:id="@+id/otp4"
+                    style="@style/OtpBoxStyle" />
+            </LinearLayout>
+
+            <!-- Countdown -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⏱ Code expires in: 1:59"
+                android:textColor="#888888"
+                android:textSize="14sp"
+                android:layout_marginTop="20dp" />
+
+            <!-- Resend -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Didn’t receive the OTP? Resend"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:layout_marginTop="12dp" />
+
+            <!-- Submit button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Submit"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_button"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="80dp" /> <!-- Add margin so content doesn't overlap bottom -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom fixed secure message -->
+    <LinearLayout
+        android:id="@+id/bottomMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="12dp">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/grey_lock"
+            android:layout_marginEnd="6dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your information is secure and encrypted"
+            android:textColor="#888888"
+            android:textSize="13sp" />
+    </LinearLayout>
+</RelativeLayout>

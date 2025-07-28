@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".GoogleSigninActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+    <!-- Scrollable content -->
+    <ScrollView
+        android:id="@+id/scrollContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/nextButtonLayout"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Top Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/backArrow"
+                    android:layout_width="20dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/back_arrow" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Forgot Password"
+                    android:textSize="22sp"
+                    android:textColor="#1D1D1F"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Sign in"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Use your Google Account. The account will be added to this device and available to other Google apps."
+                android:textSize="14sp"
+                android:textColor="#757575"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Learn more about using your account"
+                android:textSize="14sp"
+                android:textColor="#1A73E8"
+                android:textStyle="bold"
+                android:layout_marginBottom="32dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Email or phone"
+                android:background="@drawable/outline"
+                android:padding="16dp"
+                android:textColor="#000000"
+                android:textColorHint="#CCCCCC"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:inputType="textEmailAddress"
+                android:elevation="4dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot email?"
+                android:textColor="#1A73E8"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Account"
+                android:textColor="#1A73E8"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="64dp" />
+        </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>
+
+    <!-- Fixed Next Button at Bottom-Right -->
+    <LinearLayout
+        android:id="@+id/nextButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="end"
+        android:paddingTop="16dp"
+        android:paddingBottom="24dp"
+        android:background="@android:color/white">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginRight="40dp"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Next"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_button"
+            android:paddingHorizontal="32dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
