@@ -2,18 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:id="@+id/nav_home"
-        android:title="Home"
-        android:icon="@drawable/home"/>
+        android:title="Home"/>
     <item android:id="@+id/nav_savings_plan"
         android:title="Savings Plan"/>
     <item android:id="@+id/nav_investment"
-        android:title="Investment"/>
-    <item android:id="@+id/nav_income"
-        android:title="Income details"/>
+        android:title="Progress Tracking"/>
+<!--    <item android:id="@+id/nav_income"-->
+<!--        android:title="Income details"/>-->
     <item android:id="@+id/nav_transactions"
         android:title="Transactions"/>
     <item android:id="@+id/nav_edit_savings"
         android:title="Edit savings plan"/>
+    <item android:id="@+id/nav_chatbot"
+        android:title="ChatBot"/>
+<!--    <item android:id="@+id/switchAcc"-->
+<!--        android:title="Switch Account"/>-->
     <item android:id="@+id/nav_logout"
         android:title="Logout"/>
 </menu>

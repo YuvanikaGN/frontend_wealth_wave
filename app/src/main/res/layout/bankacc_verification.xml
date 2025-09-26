@@ -73,6 +73,7 @@
                 android:textSize="16sp"
                 android:textColor="#808080"/>
             <TextView
+                android:id="@+id/tvHolderName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="User name"
@@ -93,6 +94,7 @@
                 android:textSize="16sp"
                 android:textColor="#808080"/>
             <TextView
+                android:id="@+id/tvBankName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="HDFC Bank"
@@ -112,6 +114,7 @@
                 android:textSize="16sp"
                 android:textColor="#808080"/>
             <TextView
+                android:id="@+id/tvAccNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="****0612"

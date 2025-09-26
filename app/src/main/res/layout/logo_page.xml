@@ -8,14 +8,13 @@
     android:background="@android:color/white"
     android:gravity="center"
     android:orientation="vertical"
-    android:padding="60dp"
     tools:context=".LogoPageActivity">
 
     <!-- Logo -->
     <ImageView
         android:id="@+id/logoImage"
-        android:layout_width="350dp"
-        android:layout_height="200dp"
+        android:layout_width="400dp"
+        android:layout_height="180dp"
         android:layout_marginTop="-70dp"
         android:layout_marginBottom="24dp"
         android:src="@drawable/logo" />
@@ -27,8 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
         android:text="Your smart financial partner"
-        android:textColor="#555A64"
-        android:textSize="16sp" />
+        android:textColor="#555A64" />
 
     <TextView
         android:id="@+id/subTitle2"
@@ -36,8 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:text="Start your journey to financial freedom"
-        android:textColor="#555A64"
-        android:textSize="16sp" />
+        android:textColor="#555A64"/>
 
     <!-- Features -->
     <LinearLayout
@@ -45,19 +42,21 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp">
 
         <!-- Security -->
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="38dp"
-                android:layout_height="38dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/logo_security" />
 
             <TextView
@@ -65,21 +64,20 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="Security"
-                android:textColor="#555A64"
-                android:textSize="14sp" />
+                android:textColor="#555A64" />
         </LinearLayout>
 
         <!-- Smart Saving -->
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="38dp"
-                android:layout_height="38dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/logo_saving" />
 
             <TextView
@@ -87,21 +85,20 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="Smart saving"
-                android:textColor="#555A64"
-                android:textSize="14sp" />
+                android:textColor="#555A64" />
         </LinearLayout>
 
         <!-- Goal Based -->
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="38dp"
-                android:layout_height="38dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/logo_goal" />
 
             <TextView
@@ -109,21 +106,21 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="Goal based"
-                android:textColor="#555A64"
-                android:textSize="14sp" />
+                android:textColor="#555A64" />
         </LinearLayout>
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/getStartedBtn"
-        android:layout_width="300dp"
-        android:layout_height="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/logo_lineargrad"
         android:text="Get Started"
         android:textAllCaps="false"
-        android:textColor="@android:color/white"
-        android:textSize="16sp" />
+        android:textColor="@android:color/white" />
 
 
     <LinearLayout
@@ -135,16 +132,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Already have an account? "
-        android:textColor="#636363"
-        android:textSize="16sp" />
+        android:textColor="#636363" />
 
         <TextView
             android:id="@+id/loginBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Login"
-            android:textColor="#104DCE"
-            android:textSize="16sp" />
+            android:textColor="#104DCE"/>
 
     </LinearLayout>
 

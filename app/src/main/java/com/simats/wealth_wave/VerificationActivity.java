@@ -5,22 +5,31 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.simats.wealth_wave.responses.BankVerifyResponse;
+import com.simats.wealth_wave.retrofit.ApiClient;
+import com.simats.wealth_wave.retrofit.ApiService;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
 public class VerificationActivity extends AppCompatActivity {
 
-    private static final int DELAY_MILLISECONDS = 3000; // Total duration
+    private static final int DELAY_MILLISECONDS = 3000; // 3 seconds
     private ProgressBar progressBar;
+
+    private String name, bankName, accNumber, ifscCode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.verification);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -29,24 +38,24 @@ public class VerificationActivity extends AppCompatActivity {
             return insets;
         });
 
-        progressBar = findViewById(R.id.verificationProgressBar); // match with your XML ID
+        progressBar = findViewById(R.id.verificationProgressBar);
         progressBar.setMax(100);
         progressBar.setProgress(0);
 
-        // Animate progress gradually
-        animateProgressBar();
+        // Get bank details from previous screen
+        name = getIntent().getStringExtra("name");
+        bankName = getIntent().getStringExtra("bank_name");
+        accNumber = getIntent().getStringExtra("acc_number");
+        ifscCode = getIntent().getStringExtra("ifsc_code");
 
-        // Navigate after delay
-        new Handler(Looper.getMainLooper()).postDelayed(() -> {
-            Intent intent = new Intent(VerificationActivity.this, BankaccVerificationActivity.class);
-            startActivity(intent);
-            finish();
-        }, DELAY_MILLISECONDS);
+        animateProgressBar();
     }
+
+
 
     private void animateProgressBar() {
         Handler handler = new Handler(Looper.getMainLooper());
-        int delay = 30; // ms between each step
+        int delay = 30;
         int totalSteps = DELAY_MILLISECONDS / delay;
         int[] progress = {0};
 

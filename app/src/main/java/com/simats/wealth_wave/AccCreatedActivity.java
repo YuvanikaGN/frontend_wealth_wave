@@ -35,7 +35,7 @@ public class AccCreatedActivity extends AppCompatActivity {
         main.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AccCreatedActivity.this, BankDetailsActivity.class);
+                Intent intent = new Intent(AccCreatedActivity.this, UserDetailsActivity.class);
                 startActivity(intent);
             }
         });
@@ -44,7 +44,7 @@ public class AccCreatedActivity extends AppCompatActivity {
         getStartedBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AccCreatedActivity.this, BankDetailsActivity.class);
+                Intent intent = new Intent(AccCreatedActivity.this, UserDetailsActivity.class);
                 startActivity(intent);
             }
         });

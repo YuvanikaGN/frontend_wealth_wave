@@ -53,75 +53,75 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="16dp"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-    <!-- Bank Name -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bank Name "
-        android:textColor="#000000"
-        android:textStyle="bold"
-        android:layout_marginBottom="8dp"/>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+<!--    &lt;!&ndash; Bank Name &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Bank Name "-->
+<!--        android:textColor="#000000"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_marginBottom="8dp"/>-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="*"
-            android:textColor="#FF0000"/>
-    </LinearLayout>
-
-
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="*"-->
+<!--            android:textColor="#FF0000"/>-->
+<!--    </LinearLayout>-->
 
 
-    <EditText
-        android:layout_width="370dp"
-        android:layout_height="55dp"
-        android:hint="Select your bank"
-        android:layout_gravity="center"
-        android:background="@drawable/outline"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        android:padding="12dp"
-        android:layout_marginBottom="18dp"
-        android:textColorHint="#CCCCCC"
-        android:elevation="4dp"/>
+<!--    <EditText-->
+<!--        android:id="@+id/etBankName"-->
+<!--        android:layout_width="370dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:hint="Select your bank"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:background="@drawable/outline"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="16sp"-->
+<!--        android:padding="12dp"-->
+<!--        android:layout_marginBottom="18dp"-->
+<!--        android:textColorHint="#CCCCCC"-->
+<!--        android:elevation="4dp"/>-->
 
-    <!-- Name -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <!-- Bank Name -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Name "
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:layout_marginBottom="8dp"/>
+<!--    &lt;!&ndash; Name &ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+<!--        &lt;!&ndash; Bank Name &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Name "-->
+<!--            android:textColor="#000000"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginBottom="8dp"/>-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="*"
-            android:textColor="#FF0000"/>
-    </LinearLayout>
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="*"-->
+<!--            android:textColor="#FF0000"/>-->
+<!--    </LinearLayout>-->
 
-        <EditText
-            android:layout_width="370dp"
-            android:layout_height="55dp"
-            android:hint="Enter full name as per bank records"
-            android:layout_gravity="center"
-            android:background="@drawable/outline"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:padding="12dp"
-            android:layout_marginBottom="18dp"
-            android:textColorHint="#CCCCCC"
-            android:elevation="4dp"/>
+<!--        <EditText-->
+<!--            android:id="@+id/etName"-->
+<!--            android:layout_width="370dp"-->
+<!--            android:layout_height="55dp"-->
+<!--            android:hint="Enter full name as per bank records"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:background="@drawable/outline"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="16sp"-->
+<!--            android:padding="12dp"-->
+<!--            android:layout_marginBottom="18dp"-->
+<!--            android:textColorHint="#CCCCCC"-->
+<!--            android:elevation="4dp"/>-->
 
     <!-- Bank Account Number -->
     <LinearLayout
@@ -145,6 +145,7 @@
     </LinearLayout>
 
         <EditText
+            android:id="@+id/etAccNumber"
             android:layout_width="370dp"
             android:layout_height="55dp"
             android:hint="Enter 10-12 digit account number"
@@ -179,6 +180,7 @@
     </LinearLayout>
 
         <EditText
+            android:id="@+id/etIfscCode"
             android:layout_width="370dp"
             android:layout_height="55dp"
             android:hint="Enter 11 digit IFSC Code"
@@ -191,44 +193,10 @@
             android:textColorHint="#CCCCCC"
             android:elevation="4dp"/>
 
-    <!-- Mobile Number -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <!-- Bank Name -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Mobile number "
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:layout_marginBottom="8dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="*"
-            android:textColor="#FF0000"/>
-    </LinearLayout>
-
-        <EditText
-            android:layout_width="370dp"
-            android:layout_height="55dp"
-            android:hint="Enter your mobile number"
-            android:layout_gravity="center"
-            android:background="@drawable/outline"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:padding="12dp"
-            android:layout_marginBottom="18dp"
-            android:textColorHint="#CCCCCC"
-            android:elevation="4dp"/>
-
     <!-- Continue Button -->
     <androidx.appcompat.widget.AppCompatButton
-        android:textAllCaps="false"
         android:id="@+id/continueBtn"
+        android:textAllCaps="false"
         android:background="@drawable/rounded_button"
         android:layout_width="match_parent"
         android:layout_height="55dp"
@@ -241,31 +209,32 @@
         android:layout_marginBottom="20dp"/>
 
 
-
-
-
     </LinearLayout>
 
+
     <LinearLayout
+        android:id="@+id/bottomNote"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center_horizontal">
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white">
 
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:src="@drawable/grey_lock"
-            android:padding="4dp"
-            android:layout_gravity="center_vertical"/>
+            android:src="@drawable/logo_security"
+            android:contentDescription="Security Icon"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Your information is secure and encrypted"
-            android:textSize="12sp"
-            android:textColor="#7C7C7C"
-            android:layout_gravity="center_vertical" />
+            android:textSize="14sp"
+            android:textColor="#808080"
+            android:layout_marginStart="8dp"/>
     </LinearLayout>
 
 </LinearLayout>

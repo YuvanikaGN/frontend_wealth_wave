@@ -3,12 +3,14 @@ package com.simats.wealth_wave;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -18,6 +20,8 @@ import com.simats.wealth_wave.ui.LoginPageActivity;
 public class PasswordActivity extends AppCompatActivity {
 
     private ImageView backArrow;
+
+    private TextView createAccBtn;
 
     private TextView loginBtn;
 
@@ -37,14 +41,6 @@ public class PasswordActivity extends AppCompatActivity {
             return insets;
         });
 
-        loginBtn = findViewById(R.id.loginBtn);
-        loginBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(PasswordActivity.this, SignInActivity.class);
-                startActivity(intent);
-            }
-        });
 
         backArrow = findViewById(R.id.backArrow);
         backArrow.setOnClickListener(new View.OnClickListener() {
@@ -54,6 +50,24 @@ public class PasswordActivity extends AppCompatActivity {
                 startActivity(intent);
                 overridePendingTransition(0, 0);
 
+            }
+        });
+
+        createAccBtn = findViewById(R.id.createAccBtn);
+        createAccBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PasswordActivity.this, SignUpActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        loginBtn = findViewById(R.id.loginBtn);
+        loginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PasswordActivity.this, LoginPageActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -74,5 +88,8 @@ public class PasswordActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Window window = getWindow();
+        window.setStatusBarColor(ContextCompat.getColor(this, R.color.top_bar));
     }
 }

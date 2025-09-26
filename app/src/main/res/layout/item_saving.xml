@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:background="@drawable/card_bg"
+    android:layout_marginBottom="8dp"
+    android:elevation="4dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp">
+
+    <TextView
+        android:id="@+id/tvSavedAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹ 0"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSavedDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12 Aug 2025, 02:30 PM"
+        android:textColor="#6E6E6E"
+        android:textSize="12sp"
+        android:layout_marginTop="4dp"/>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_home_bot"
+        android:title="Home"
+        android:icon="@drawable/nav_home"
+        android:iconTint="@color/white"/>
+    <item android:id="@+id/nav_savings_plan_bot"
+        android:title="Savings"
+        android:icon="@drawable/nav_savings"
+        android:iconTint="@color/white"/>
+    <item android:id="@+id/nav_investment_bot"
+        android:title="Progress"
+        android:icon="@drawable/nav_progress"
+        android:iconTint="@color/white"/>
+    <item android:id="@+id/nav_profile_bot"
+        android:title="Profile"
+        android:icon="@drawable/nav_user"
+        android:iconTint="@color/white"/>
+</menu>

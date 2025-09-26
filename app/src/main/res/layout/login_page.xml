@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center_horizontal"
         android:padding="30dp">
@@ -52,6 +52,7 @@
             android:layout_marginBottom="8dp" />
 
         <EditText
+            android:id="@+id/emailEditText"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:hint="  Enter your email"
@@ -75,6 +76,7 @@
             android:layout_marginBottom="8dp" />
 
         <EditText
+            android:id="@+id/passwordEditText"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:hint="  Enter your password"
@@ -112,74 +114,65 @@
             android:layout_marginBottom="20dp" />
 
         <!-- Or Continue With -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_marginBottom="20dp">
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginBottom="20dp">-->
 
-            <View
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="1dp"
-                android:background="#999999" />
+<!--            <View-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:background="#999999" />-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Or continue with"
-                android:textColor="#555A64"
-                android:textSize="14sp"
-                android:paddingHorizontal="8dp" />
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Or continue with"-->
+<!--                android:textColor="#555A64"-->
+<!--                android:textSize="14sp"-->
+<!--                android:paddingHorizontal="8dp" />-->
 
-            <View
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="1dp"
-                android:background="#999999" />
-        </LinearLayout>
+<!--            <View-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:background="#999999" />-->
+<!--        </LinearLayout>-->
 
-        <!-- Google and Mobile Buttons -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:padding="4dp"
-            android:layout_marginBottom="32dp">
+<!--        &lt;!&ndash; Google and Mobile Buttons &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="4dp"-->
+<!--            android:layout_marginBottom="32dp">-->
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="340dp"
-                android:layout_weight="1"
-                android:layout_height="55dp"
-                android:text="Google"
-                android:textColor="#636363"
-                android:background="@drawable/outline"
-                android:textAllCaps="false"
-                android:drawablePadding="8dp"
-                android:layout_marginEnd="8dp"
-                android:elevation="4dp"/>
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/mobile"
-                android:layout_width="340dp"
-                android:layout_weight="1"
-                android:layout_height="55dp"
-                android:text="Mobile"
-                android:textColor="#636363"
-                android:background="@drawable/outline"
-                android:textAllCaps="false"
-                android:drawablePadding="8dp"
-                android:layout_marginStart="8dp"
-                android:elevation="4dp"/>
-        </LinearLayout>
+<!--            <androidx.appcompat.widget.AppCompatButton-->
+<!--                android:id="@+id/googleSignInBtn"-->
+<!--                android:layout_width="340dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_height="55dp"-->
+<!--                android:text="Google"-->
+<!--                android:textColor="#636363"-->
+<!--                android:background="@drawable/outline"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:drawablePadding="8dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:elevation="4dp"/>-->
+<!--            -->
+<!--        </LinearLayout>-->
 
         <!-- Create Account -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
 
             <TextView
                 android:layout_width="wrap_content"

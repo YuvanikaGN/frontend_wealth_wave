@@ -2,16 +2,94 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+
+
+
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/wealth_wave"
-        android:label="@string/app_name"
+        android:label="Wealth Wave"
         android:roundIcon="@drawable/app_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Wealth_wave"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+
+        <receiver android:name=".ReminderReceiver" android:exported="true" />
+        <receiver android:name=".BootReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".SavingsHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AllPlansActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatbotActivity"
+            android:exported="true" />
+
+        <receiver android:name=".DailyNotificationReceiver" />
+
+        <activity
+            android:name=".ViewPlansActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ExpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NavigationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ItemExpenseActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ItemTransactionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".GoalStatus"
+            android:exported="false" />
+        <activity
+            android:name=".AppLockActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
         <activity
             android:name=".MobileActivity"
             android:exported="false" />
@@ -20,16 +98,16 @@
             android:exported="false" />
         <activity
             android:name=".FingerprintActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".PasswordActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".SavingsSummaryActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".AdjustIncomeActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".AdditionalIncomeActivity"
             android:exported="false" />
@@ -38,12 +116,9 @@
             android:exported="false" />
         <activity
             android:name=".SupportActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".SecuritySettingsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ExpenseActivity"
             android:exported="false" />
         <activity
             android:name=".BankaccVerificationActivity"
@@ -53,7 +128,7 @@
             android:exported="false" />
         <activity
             android:name=".OtpActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".SigninEmailActivity"
             android:exported="false" />
@@ -62,65 +137,68 @@
             android:exported="false" />
         <activity
             android:name=".ForgotPasswordActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".PlanCreationActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".AccVerifiedActivity"
             android:exported="false" />
         <activity
             android:name=".NavHeaderActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity2"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".AccCreatedActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
-            android:name=".InvestmentTrackingActivity"
-            android:exported="false" />
+            android:name=".ProgressTrackingActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
         <activity
             android:name=".ui.LoginPageActivity"
-            android:exported="false" />
+            android:exported="true"
+            android:launchMode="singleTop" />
         <activity
             android:name=".NotificationsActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".UserProfileActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".TransactionsActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".IncomeActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".EditsavingsCopyActivity"
             android:exported="false" />
         <activity
             android:name=".EditSavingsActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".SavingsActivity"
-            android:exported="false"
-            android:theme="@style/Theme.Wealth_wave" />
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Wealth_wave"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".HomeCopyActivity"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
-            android:exported="false" />
+            android:exported="true"
+            android:launchMode="singleTop" />
         <activity
             android:name=".UserDetailsActivity"
-            android:exported="false" />
+            android:exported="true"
+            android:launchMode="singleTop" />
         <activity
             android:name=".BankDetailsActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
-            android:name=".SignInActivity"
-            android:exported="false" />
+            android:name=".SignUpActivity"
+            android:exported="true" />
         <activity
             android:name=".LogoPageActivity"
             android:exported="true">
@@ -130,11 +208,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
             android:exported="false"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.Wealth_wave" />
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+
+
     </application>
 
 </manifest>
